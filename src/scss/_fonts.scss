@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("./../../assets/fonts/gotham-pro.woff");
+}
+
+@font-face {
+  font-family: "GothamProM";
+  src: url("./../../assets/fonts/gotham-pro-m.woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../../assets/fonts/montserrat.woff");
+}
+$medium: GothamProM;
+$light: GothamPro;
+$montserrat: Montserrat;

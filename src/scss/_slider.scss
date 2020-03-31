@@ -1,0 +1,18 @@
+#slides{
+     overflow:hidden;
+     position: relative;
+    img{
+        width: calc(100%);
+        margin:auto;
+        transition-property: opacity;
+        transition:0.5s;
+        position: absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        &.active{
+            position: relative;
+            opacity:1;
+        }
+    }
+}
