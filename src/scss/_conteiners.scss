@@ -252,7 +252,7 @@
 }
 .history {
   .row{
-      padding-top: 0;
+    padding-top:30px;
   }
   .wrap{
     background: white;
@@ -272,19 +272,20 @@
     margin-bottom: 40px;;
   }
   .historyLine {
-      border: 2px dotted #e1e3e6;
-      border-left: none;
-      height:190px;
       position: absolute;
-      width:1110px;
       z-index:2;
-      top: 170px;
-      left: 85px;
+      border: none;
+      border-left: 2px dotted #e1e3e6;
+      height: calc(100% - 340px);
+      width:1px;
+      top: 217px;
+      left:48px;
   }
 
   &__elements {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-between;
     .element {
       display: flex;
@@ -298,8 +299,8 @@
       &:before{
              content:"";
             position: absolute;
-            top:-29px;
-            left:18px;
+            top: 18px;
+                left: -18px;
             display:inline-block;
             background-color:#8f489a;
             width:13px;

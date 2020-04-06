@@ -1,7 +1,6 @@
 {
-  "name": "test-gulp",
+  "name": "iampass",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +25,14 @@
   },
   "dependencies": {
     "npm": "^6.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misha1737/iampass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/misha1737/iampass/issues"
+  },
+  "homepage": "https://github.com/misha1737/iampass#readme",
+  "description": ""
 }
