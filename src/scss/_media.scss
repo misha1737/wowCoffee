@@ -60,37 +60,56 @@
     
 
 
-      .advantages .row{
+      .aboutPasport .row{
         .wrap{
             border-radius: 20px;
             top: 0px;
             margin-bottom: 0px;
-            padding:10px 15px;
+            padding:20px 15px;
+            .passport{
+                font-size: 16px;
+              }
+              .passportCreated{
+                font-size: 14px;
+                margin:8px 0;
+            
+              }
+              .passportIndo{
+                font-size: 16px;
+              }
         }
-        .advantage {
-            margin-top: 15px;
-            width: 100%;
-            &:nth-child(2n){
-                margin-left: 0;
+      }
+
+
+      .advantages .row{
+        .wrap{
+            .advantagesBlock{
+               flex-direction: column;
+               text-align: left;
             }
-            p{
-                font-size: 16px;
-                display: block;
-                height:50px;
-            }
-            img{
-                width:50px;
-                height:50px;
-            }
-            &.more {
-                font-size: 16px;
+            .advantage{
+                display:flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                width:100%;
+                margin-top: 16px;
                 p{
-                margin-top: 0px;
-                margin-bottom: 15px;;
+                    text-align: left;
+                    margin-left: 14px;;
+                    text-align: left;
+                    font-size: 16px;
+                }
+            }
+            .moreAdvantages{
+                p{
+                    text-align: left;
+                    font-size: 16px;
                 }
             }
         }
       }
+
+
       .api .row{
         text-align: center; 
         height: auto;  
@@ -135,7 +154,6 @@
             left:20px;
         }
         &__elements {
-           
             flex-wrap: nowrap;
             flex-direction: column;
             .element {

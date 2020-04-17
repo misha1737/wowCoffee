@@ -3,6 +3,7 @@ var images = [
   "./assets/wowCoffe-2.png",
   "./assets/wowCoffe-3.png"
 ];
+
 var next = document.querySelector("#next");
 var previous = document.querySelector("#previous");
 var slider = document.querySelector("#slides");

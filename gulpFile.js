@@ -14,23 +14,23 @@ var cssnano = require('gulp-cssnano');
 function styles(){
    return gulp.src('./src/scss/**/*.scss')
     
-   .pipe(sourcemaps.init())
+  //  .pipe(sourcemaps.init())
 .pipe(sass().on('error', sass.logError))
 //.pipe(uncss({ html: ['index.html']  }))
 .pipe(autoprefixer())
-.pipe(cleanCSS())
+// .pipe(cleanCSS())
 //.pipe(cssnano())
-.pipe(sourcemaps.write())
+// .pipe(sourcemaps.write())
 .pipe(gulp.dest('./build/css/'))
      .pipe(browserSync.stream())
 }
 
 function scripts(){
 	    return gulp.src('./src/js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(uglify({
-    	toplevel: true
-		}))
+    // .pipe(concat('all.js'))
+    // .pipe(uglify({
+    // 	toplevel: true
+		// }))
     .pipe(gulp.dest('./build/js/'))
     .pipe(browserSync.stream())
 }

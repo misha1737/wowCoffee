@@ -152,18 +152,10 @@
     }
   }
 }
-.advantages {
+.aboutPasport {
   .row {
-    
-   
-   
-    
-    
-    
-    
-    
     .wrap{
-        padding: 20px 60px;
+        padding: 60px 60px;
         background: white;
         position: relative;
         z-index: 3;
@@ -172,37 +164,66 @@
         margin-bottom: 60px;
         box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.1);
         padding-bottom: 80px;
+        .passport{
+          font-size: 24px;
+          font-weight: bold;
+          font-family: $medium;
+          line-height: 1.5;
+          color: $black;
+        }
+        .passportCreated{
+          color: #b6bbc2;
+          font-family: $light;
+          font-size: 20px;
+          font-weight: normal;
+          margin: 24px 0;
+        }
+        .passportIndo{
+          font-family: $light;
+          font-size: 24px;
+          font-weight: normal;
+          line-height: normal;
+          color: $black;
+        }
     }
-    .advantage {
-      display: inline-block;
-      width: 44%;
-      margin-top: 60px;
-      &:nth-child(2n){
-          margin-left: 4%;
+  }
+}
+.advantages{
+  .row {
+    .wrap{
+      .advantagesBlock{
+        display:flex;
+        align-items: center;
+        justify-content: center;
       }
-      img {
-        float: left;
-        margin-right: 16px;
-        width:80px;
-        height:80px;
+      .advantage{
+        width:25%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin:0 10px;
+        margin-top: 80px;;
+        p{
+          font-family: $medium;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: $black;
+          text-align: center;
+        }
       }
-      p {
-        font-family: $medium;
-        font-size: 20px;
-        line-height: 1.5;
-        display: table-cell;
-        height: 80px;
-        vertical-align: middle;
-        color: $black;
-      }
-      &.more {
-        font-size: 24px;
-        p {
+      .moreAdvantages{
+text-align: center;;
+        p{
+          margin-top: 40px;;
+          font-family: $medium;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 1.5;
           color: #8f489a;
-          display: inline-block;
           border-bottom: 1px solid #8f489a;
-          height: auto;
-          margin-top: -80px;
+          display:inline-block
         }
       }
     }
