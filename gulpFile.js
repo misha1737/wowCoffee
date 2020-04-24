@@ -19,7 +19,7 @@ function styles(){
 //.pipe(uncss({ html: ['index.html']  }))
 .pipe(autoprefixer())
 // .pipe(cleanCSS())
-//.pipe(cssnano())
+.pipe(cssnano())
 // .pipe(sourcemaps.write())
 .pipe(gulp.dest('./build/css/'))
      .pipe(browserSync.stream())
