@@ -1,3 +1,5 @@
+if (passport){
+
 document.getElementById("brand-name").innerHTML = passport.product.brand;
 document.getElementById("product-name").innerHTML = passport.product.name;
 
@@ -87,5 +89,13 @@ next.addEventListener("click", function () {
 previous.addEventListener("click", function () {
   curentSlide == 0 ? (curentSlide = images.length - 1) : curentSlide--;
   curentImage(curentSlide);
-  
+
 });
+}
+
+else{
+document.getElementsByTagName("body")[0].innerHTML = '<div class="conteiner error"><div class="row"> <div class="logo"></div><div class="errorImage"></div><p class="message"><p></div></div>';
+document.getElementsByClassName("logo")[0].innerHTML = '<img src="./../assets/logoDark.svg" alt="" />';
+document.getElementsByClassName("errorImage")[0].innerHTML = '<img src="./../assets/404.svg" alt="" /><img class="mobile" src="./../assets/404Mobile.svg" alt="" />';
+document.getElementsByClassName("message")[0].innerHTML = 'Извините, этой страницы не существует. Вернуться на главную страницу?';
+}

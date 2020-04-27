@@ -1,3 +1,5 @@
+if (passport){
+
 document.getElementById("brand-name").innerHTML = passport.product.brand;
 document.getElementById("product-name").innerHTML = passport.product.name;
 
@@ -87,5 +89,10 @@ next.addEventListener("click", function () {
 previous.addEventListener("click", function () {
   curentSlide == 0 ? (curentSlide = images.length - 1) : curentSlide--;
   curentImage(curentSlide);
-  
+
 });
+}
+
+else{
+document.getElementsByTagName("body")[0].innerHTML = '<div class="error"><div class="logo"></div><div class="erroeImage"></div><p>Извините, этой страницы не существует. Вернуться на главную страницу?<p></div>';
+}
