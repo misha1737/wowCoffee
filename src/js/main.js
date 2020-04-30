@@ -76,7 +76,9 @@ function curentImage(i) {
   if (slides.length > 0) {
     slides[0].className = "";
   }
+  if(slider.getElementsByTagName("img").length>0){
   slider.getElementsByTagName("img")[i].className = "active";
+  }
 }
 
 addImage();

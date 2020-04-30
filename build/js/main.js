@@ -76,7 +76,9 @@ function curentImage(i) {
   if (slides.length > 0) {
     slides[0].className = "";
   }
+  if(slider.getElementsByTagName("img").length>0){
   slider.getElementsByTagName("img")[i].className = "active";
+  }
 }
 
 addImage();
@@ -94,8 +96,5 @@ previous.addEventListener("click", function () {
 }
 
 else{
-document.getElementsByTagName("body")[0].innerHTML = '<div class="conteiner error"><div class="row"> <div class="logo"></div><div class="errorImage"></div><p class="message"><p></div></div>';
-document.getElementsByClassName("logo")[0].innerHTML = '<img src="./../assets/logoDark.svg" alt="" />';
-document.getElementsByClassName("errorImage")[0].innerHTML = '<img src="./../assets/404.svg" alt="" /><img class="mobile" src="./../assets/404Mobile.svg" alt="" />';
-document.getElementsByClassName("message")[0].innerHTML = 'Извините, этой страницы не существует. Вернуться на главную страницу?';
+document.getElementsByTagName("body")[0].innerHTML = '<div class="error"><div class="logo"></div><div class="erroeImage"></div><p>Извините, этой страницы не существует. Вернуться на главную страницу?<p></div>';
 }

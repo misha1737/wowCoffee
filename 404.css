@@ -1,0 +1,97 @@
+@font-face {
+	 font-family: "GothamPro";
+	 src: url("./assets/fonts/gotham-pro.woff") format('woff');
+}
+ @font-face {
+	 font-family: "GothamProM";
+	 src: url("./assets/fonts/gotham-pro-m.woff") format('woff');
+}
+ @font-face {
+	 font-family: "Montserrat";
+	 src: url("./assets/fonts/montserrat.woff") format('woff');
+}
+ body {
+	 background-color: #f9f9f9;
+}
+ body .error {
+	 text-align: center;
+}
+ body .error .logo {
+	 text-align: left;
+}
+ body .error .errorImage {
+	 margin-top: -80px;
+}
+ body .error .errorImage img {
+	 display: inline-block;
+	 max-width: 100%;
+	 width: 628px;
+}
+ body .error .errorImage img.mobile {
+	 display: none;
+}
+ body .error .message {
+	 display: inline-block;
+	 max-width: 584px;
+	 font-family: Montserrat;
+	 font-size: 24px;
+	 font-weight: 500;
+	 line-height: normal;
+	 color: #2f2f39;
+	 margin: auto;
+	 margin-top: 48px;
+}
+ .logo {
+	 height: 48px;
+}
+ .logo img {
+	 height: 100%;
+}
+.conteiner .row {
+	 width: 1240px;
+	 margin: auto;
+	 padding-top: 25px;
+}
+ @media (max-width: 1242px) {
+	 .conteiner .row {
+		 width: calc(100% - 32px);
+		 margin: auto;
+		 padding-top: 25px;
+	}
+}
+ 
+ @media (max-width: 650px) {
+	 body {
+		 background-color: #f9f9f9;
+	}
+	 body .error {
+		 text-align: center;
+	}
+	 body .error .logo {
+		 text-align: center;
+	}
+	 body .error .errorImage {
+		 margin-top: 60px;
+	}
+	 body .error .errorImage img {
+		 max-width: 100%;
+		 width: 628px;
+		 display: none;
+	}
+	 body .error .errorImage img.mobile {
+		 display: inline-block;
+	}
+	 body .error .message {
+		 display: inline-block;
+		 max-width: 584px;
+		 font-family: Montserrat;
+		 font-size: 16px;
+		 font-weight: 500;
+		 line-height: normal;
+		 color: #2f2f39;
+		 margin: auto;
+		 margin-top: 48px;
+	}
+}
+
+ 
